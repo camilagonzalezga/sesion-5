@@ -79,7 +79,7 @@
                     let r = floor(random(0, 101));
                     createElement("blockquote", data[r].quote + " ").parent(texto).id("cita");
                     createElement("cite", data[r].author).parent("cita");
-                    createImg("images/quote.svg", "Notebook").parent(imagen).addClass("w-100");
+                    createImg("quote.svg", "Notebook").parent(imagen).addClass("w-100");
                     selectAll(".nav-item a")[1].addClass("active");
                 } else if (seleccionada == 2) {
                     createP(data.explanation).parent(texto);
